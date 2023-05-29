@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
-
+import json
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -20,6 +20,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-%%mj%z2hkrf!1wy0(l2!73$h85rsux*))+a1&00$8@#hchbe18'
+
+# Load Google Account credentials
+# credentials_path = BASE_DIR / 'credentials.json'
+# with open(credentials_path) as f:
+#     credentials = json.load(f)
+
+# # Update Google Calendar client ID and secret
+# GOOGLE_CALENDAR_CLIENT_ID = credentials['web']['client_id']
+# GOOGLE_CALENDAR_CLIENT_SECRET = credentials['web']['client_secret']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
