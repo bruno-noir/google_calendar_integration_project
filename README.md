@@ -42,7 +42,7 @@ To run this project on your local machine, follow these steps:
    {
    "GOOGLE_CALENDAR_CLIENT_ID": "YOUR_CLIENT_ID",
    "GOOGLE_CALENDAR_CLIENT_SECRET": "YOUR_CLIENT_SECRET"
- }
+   }
 3. Replace '"YOUR_CLIENT_ID"' and '"YOUR_CLIENT_SECRET"' with the actual values obtained from the Google Cloud Console.
 
 ### Setting up Google Account Credentials
@@ -59,3 +59,5 @@ To run this project on your local machine, follow these steps:
 2. Access the API endpoints:
     Initiate the OAuth process by visiting: 'http://localhost:8000/rest/v1/calendar/init/'. This will prompt the user for their credentials.
     Handle the redirect request from Google by visiting: 'http://localhost:8000/rest/v1/calendar/redirect/'. This will obtain the access token and retrieve the user's calendar events.
+
+<!-- Note: Before accessing these endpoints, make sure you have completed the configuration steps mentioned above and have the necessary Google Account credentials saved in the project directory. -->
